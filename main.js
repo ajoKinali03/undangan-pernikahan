@@ -3,9 +3,10 @@ const btn = document.getElementsByClassName("btn")[0];
 const containerCover = document.getElementsByClassName("container-cover")[0];
 const errorDisplay = document.getElementsByClassName("error")[0];
 const containerDisplay = document.getElementsByClassName("container")[0];
-
+const isi = document.getElementsByClassName("isi")[0];
 
 btn.addEventListener("click", () => {
+  isi.style.display = "block";
   containerCover.style.transform = "translateY(-700px)";
   containerCover.style.opacity = "0";
   containerCover.style.transition = "1s";
